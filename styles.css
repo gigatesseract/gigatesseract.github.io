@@ -169,11 +169,7 @@ position: relative;
   top: 3vw;
   left: 12vw;
 }
-@media only screen and (max-width: 900px){
-  body  {
-        background-color: blue;
-    }
-}
+
 .contact{
   position: relative;
   top: 20vw;
