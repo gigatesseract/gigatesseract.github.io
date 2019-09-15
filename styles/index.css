@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  cursor: url("data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAND/AP///wAAhP8AAAD/AABV/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAABERAAAAAAAAAAAAAAAAAREREAAAAAAAAAAAAAAAABFVERAAAAAAAAAAAAAAAAERVVEAAAAAAAAAAAAAAAABDNVVAAAAAAAAAAAAAAAACATNUQAAAAAAAAAAAAAAAIgETRAAAAAAAAAAAAAAAACIABEAAAAAAAAAAAAAAAAIiIiAAAAAAAAAAAAAAAAAiIiIAAAAAAAAAAAAAAAAAQiIAAAAAAAAAAAAAAAAABEQgAAAAAAAAAAAAAAAAACJAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////////////////////////////////////////////////////////////////////z////w////gf///wH///4D///8A///+AP///AH///wD///4B///8A////Af///gf///wP///8P////H////w=="),
+    auto;
+  overflow: auto !important;
+}
+
+.about-me {
+  background-color: rgba(34, 4, 4, 0.4);
+  font-family: "Lucida Console", Monaco, monospace;
+  color: white;
+  position: absolute;
+  /* width: 40vw; */
+  /* height: auto; */
+  /* height: 60vh; */
+  /* height: 30vw; */
+  bottom: 8em;
+  left: 50%;
+  margin-left: -400px;
+  top: 50%;
+  margin-top: -250px;
+  box-shadow: 2px;
+  display: inline-block;
+  padding: 20px;
+  padding-bottom: 10px;
+  box-shadow: 4px 4px 2px #100349;
+  border-radius: 20px;
+  animation: fadein 8s;
+  -moz-animation: fadein 8s;
+  width: 800px;
+  height: 550px;
+  /* overflow-y: auto; */
+  /* animation-delay: 2s; */
+}
+.about-me img {
+  border-radius: 6em;
+  width: 12em;
+  height: 12em;
+  position: relative;
+  top: -8em;
+  opacity: 1;
+  /* display: inline-block; */
+}
+.about-me-body {
+  padding: 20px;
+  position: relative;
+  top: -8em;
+  /* overflow: scroll; */
+  /* height: auto; */
+
+  /* animation-delay: 3s; */
+  /* opacity: 0; */
+}
+.about-me-para {
+  height: inherit;
+  /* overflow-y: auto; */
+  padding-right: 17px; /*Increase/decrease this value for cross-browser compatibility
+  /* box-sizing: content-box; /*  */
+  font-size: 16px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.about-me-heading {
+  position: relative;
+  /* top: -10em; */
+  font-size: 1.5vh;
+  width: 100%;
+  /* text-decoration: underline; */
+}
+
+/* .about-me-heading-typewriter {
+  display: inline;
+} */
+.typewriter {
+  text-align: initial !important;
+  justify-content: left;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.4em; /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 30px;
+  display: inline-block;
+  /* width: 20vw; */
+  /* width: 400px; */
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.about-me p {
+  font-size: 16px;
+}
+
+.bottom {
+  position: relative;
+  bottom: -1em;
+}
+.little-text {
+  font-size: 12px !important;
+  /* position: absolute;
+  bottom: 1em;
+  left: 10em;
+  font-size: 16px; */
+  /* white-space: pre-line; */
+  /* text-align: initial; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* padding: 20px; */
+}
+
+.fab {
+  /* display: inline-block; */
+  padding: 5px;
+
+  /* width: 3em; */
+  /* height: 3em; */
+}
+i {
+  display: inline-block;
+  width: 30px;
+}
+/* .little-text {
+  font-size: 1vh;
+  position: relative;
+  bottom: 2em; 
+ } */
+
+.little-little-text {
+  font-size: 10px !important;
+  /* position: relative;
+  bottom: 0em; */
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: rgb(8, 6, 39);
+}  */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}  */
+a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: rgb(204, 218, 21);
+}
+
+body,
+canvas {
+  overflow: auto;
+}
+
+div.clickEffect {
+  position: fixed;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  animation: clickEffect 0.4s ease-out;
+  z-index: 99999;
+}
+@keyframes clickEffect {
+  0% {
+        opacity: 1;
+        width: 0.5em;
+    height: 0.5em;
+        margin: -0.25em;
+        border-width: 0.5em;
+  }
+  100% {
+        opacity: 0.2;
+        width: 15em;
+    height: 15em;
+        margin: -7.5em;
+        border-width: 0.03em;
+  }
+}

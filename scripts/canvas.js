@@ -176,7 +176,7 @@ class Asteroid {
 }
 // GLOBALS
 var star_array = [];
-var no_of_stars = 100;
+var no_of_stars = 90;
 var star_flag = false;
 var transition_alpha = 0;
 for (i = 0; i < no_of_stars; i++) {
@@ -193,7 +193,7 @@ for (i = 0; i < no_of_stars; i++) {
 }
 
 var asteroid_array = [];
-var no_of_asteroids = 40;
+var no_of_asteroids = 160;
 for (i = 0; i < no_of_asteroids; i++) {
   asteroid_array.push(
     new Asteroid(
@@ -204,7 +204,7 @@ for (i = 0; i < no_of_asteroids; i++) {
       8 * Math.sin(i * ((2 * Math.PI) / no_of_asteroids)),
       100,
       "#ffffff",
-      1
+      3
     )
   );
 }
