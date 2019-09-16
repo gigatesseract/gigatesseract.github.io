@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <script src="https://kit.fontawesome.com/3c15f55fe4.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Allerta Stencil"
@@ -17,16 +23,24 @@
     <link rel="stylesheet" href="styles/index.css" />
     <title>Welcome to my universe!</title>
   </head>
-  <body>
-    <div class="about-me">
-      <div class="about-me-image">
-        <img src="assets/wdp.jpg" />
+  <body class="d-flex justify-content-center align-items-center text-center">
+    <div class="about-me container">
+      <div class="about-me-image row align-items-center justify-content-center">
+        <div class=" text-center col-xs-12">
+          <img
+            src="assets/wdp.jpg"
+            alt="my-picture"
+            class="img-responsive center-block"
+          />
+        </div>
       </div>
-      <div class="about-me-body">
-        <span class="about-me-heading-typewriter typewriter about-me-heading">
+      <div class="about-me-body row text-center justify-content-center">
+        <span
+          class="about-me-heading-typewriter typewriter about-me-heading col-xs-12 justify-content-center align-items-center"
+        >
           ... < HELLO, WORLD /> ...
         </span>
-        <div class="about-me-para">
+        <div class="about-me-para col-xs-12">
           <p>
             Hi everyone! I am N Praveen Chandhar, an undergrad in Computer
             Science and Engineering from NIT Trichy, in my third year.<br />
@@ -38,14 +52,7 @@
             Vision, Algorithmic Programming, Cryptography and of course, Web
             Development!<br />
           </p>
-          <p>
-            In my free time, I play chess, Violin and Piano. (Completed Grade
-            3-Practicals from Trinity College, London)<br />
-          </p>
-          <p>
-            TV shows and animes, you ask? Sherlock, Game of Thrones and Death
-            Note. Period.
-          </p>
+          <p>In my free time, I cube or play chess, violin or piano. <br /></p>
           <p>
             Find me on: <br />
             <br />
@@ -85,7 +92,7 @@
             </p>
             <p class="little-little-text">
               PS: Everything you see on the screen was coded using pure
-              JavaScript. More features coming soon!
+              JavaScript. Tap to add stars!!
             </p>
           </div>
         </div>
@@ -93,6 +100,11 @@
     </div>
     <canvas id="canvas"></canvas>
   </body>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
   <script src="scripts/clickEffect.js"></script>
   <script src="scripts/helper.js"></script>
   <script src="scripts/canvas.js"></script>

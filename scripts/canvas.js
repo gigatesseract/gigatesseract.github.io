@@ -214,6 +214,12 @@ window.addEventListener("resize", function() {
   canvas.adjustDimensions(window.innerWidth, window.innerHeight);
 });
 
+window.addEventListener("click", function(e) {
+  let x = e.clientX;
+  let y = e.clientY;
+  star_array.push(new Star(x, y, "#E5E383", 10, 8, 5));
+});
+
 // DRIVER COODE
 function draw() {
   if (transition_alpha > 255) transition_alpha = 255;
