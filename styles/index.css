@@ -12,19 +12,23 @@ body {
   /* background-color: inherit; */
   font-family: "Lucida Console", Monaco, monospace;
   background-color: rgba(34, 4, 4, 0.6);
+  /* background-color: transparent !important; */
   /* color: white; */
   /* background-color: inherit; */
   position: absolute;
   width: 40vw;
   /* height: auto; */
   overflow-y: auto;
-  height: 72vh;
+  /* height: 60vh; */
+  height: auto;
   /* position: sticky; */
   /* height: 30vw; */
   /* top: 8vh; */
   /* left: 50%; */
   /* margin-left: -20vw; */
   /* top: 50%; */
+  margin-left: auto;
+  margin-right: auto;
   /* margin-top: -30vh; */
   box-shadow: 2px;
   /* display: inline-block; */
@@ -169,6 +173,23 @@ body {
     border-color: orange;
   }
 }
+
+@keyframes background {
+  from {
+    background-color: rgba(34, 4, 4, 0.6);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+@keyframes anti-background {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba(34, 4, 4, 0.6);
+  }
+}
 .about-me p {
   font-size: 1em;
 }
@@ -270,3 +291,27 @@ div.clickEffect {
         border-width: 0.03em;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .about-me {
+    width: auto;
+    height: auto;
+   
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    transition: background 1s linear;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .about-me{
+  transition: antibackground 1s linear;
+}
+}
+
